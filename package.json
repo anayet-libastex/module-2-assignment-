@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "description": "",
-  "homepage": "https://anayet-libastex.github.io/module-2-assignment-",
+  "homepage": "https://anayet-libastex.github.io/module-2-assignment/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
