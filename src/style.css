@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* Header Section */
+.header .menu ul li a {
+  color: #333333;
+  font-weight: 500;
+  transition: color 0.1s ease-in;
+}
+.header .menu ul li a.active {
+   color: #155DFC;
+}
+.header .menu ul li a:not(.active):hover {
+  color: #155DFC;
+}
+/* About Us */
+.about-us .right .grid  span {
+   display: inline-block;
+   padding: 6px 0px;
+   font-weight: 600;
+   color: #333333;
+}
+.about-us .right .grid  i {
+   color: #0D9488;
+   padding-right: 4px;
+}
+
+/* Department Section */
+.departments .grid .card {
+  background-color: #ffffff;
+  padding:28px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  /* transform: translateY(0px) scale(0.9); */
+  transition: all 0.3s ease 50ms;
+}
+.departments .grid .card:hover {
+   border: 2px solid #0D9488;  
+   /* transform: translateY(-16px) scale(1);  */
+}
+.departments .grid .card:hover a {
+   color: #0D9488
+}
+.departments .grid .card:hover svg {
+   fill: #0D9488;
+}
+.departments .grid .card .circle {
+   fill: #155DFC;
+   transition: fill 0.3s ease 30ms;
+}
+.departments .grid .card:hover svg .circle {
+   fill: #0D9488;
+}
+.departments .grid .card h3{
+   font-size: 20px;
+   line-height: 28px;
+   padding-top: 16px;
+}
+.departments .grid .card p{
+   font-size: 16px;
+   color: #7A7A7A;
+   padding: 16px 0px;
+}
+.departments .grid .card a{
+   color: #155dfc;
+   font-weight: bold;
+}
