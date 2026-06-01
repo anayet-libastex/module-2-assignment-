@@ -5,4 +5,9 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  base: '/module-2-assignment-/', 
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  }
 })
