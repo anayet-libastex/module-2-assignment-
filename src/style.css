@@ -4,17 +4,16 @@
    --breakpoint-xs: 475px;
 }
 
-
 /* Header Section */
-.header .menu ul li a {
+.header nav .nav-links li a {
   color: #333333;
-  font-weight: 500;
+  font-weight: 500 !important;
   transition: color 0.1s ease-in;
 }
-.header .menu ul li a.active {
+.header nav .nav-links li a.active {
    color: #155DFC;
 }
-.header .menu ul li a:not(.active):hover {
+.header nav .nav-links li a:not(.active):hover {
   color: #155DFC;
 }
 /* About Us */
