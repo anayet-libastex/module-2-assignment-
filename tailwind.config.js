@@ -1,9 +1,10 @@
 module.exports = {
-  content: [
-    "*"
+   content: [
+   "*",
   ],
   theme: {
-    extend: {},
+    extend: {
+    },
   },
   plugins: [],
 }

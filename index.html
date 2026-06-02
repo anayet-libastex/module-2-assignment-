@@ -1,209 +1,189 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PureHealth Care</title>
-    <link
-      rel="shortcut icon"
-      href="./src/assets/medical-team.png"
-      type="image/x-icon"
-    />
-    <!-- Font-awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <link href="./src/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- Header Section-->
-     <!-- 
-        For making sticky Header Need to Add Below Tailwind utility class-:
-        bg-white sticky top-0 left-0 w-full z-50
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PureHealth Care</title>
+  <link rel="shortcut icon" href="./src/assets/medical-team.png" type="image/x-icon" />
+  <!-- Font-awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link href="./src/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header Section-->
+  <!-- 
+    ***EXTRA ***
+    -------------
+    -------------
+        For making fixed HEADER Need to Add Below Tailwind utility class to the header class-:
+        " bg-white sticky top-0 left-0 w-full z-50 ""
      -->
-    <header class="header">
-      <!-- Top Header -->
-      <div class="top-header w-full bg-blue-500 text-white">
-        <div class="max-w-5xl mx-auto">
-          <div class="flex justify-between py-2">
-            <!-- Top Header Left Side -->
-            <div class="left-side flex items-center gap-3">
-              <a href="tel:+1 (123) 456-7890"
-                ><i class="fa-solid fa-phone"></i> +1 (123) 456-7890</a
-              >
-              <span>|</span>
-              <a href="mailto:hello@medicare.com"
-                ><i class="fa-solid fa-envelope"></i> hello@medicare.com</a
-              >
-            </div>
-            <!-- Top Header Right Side -->
-            <div class="right-side flex items-center gap-3">
-              <span>Follow Us:</span>
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <span>|</span>
-              <i class="fa-solid fa-earth-asia"></i>
-              <span>EN <i class="fa-solid fa-angle-down"></i></span>
-            </div>
+  <header class="header shadow-md md:shadow-sm relative">
+    <!-- Top Header -->
+    <div class="top-header w-full bg-blue-500 text-white hidden md:block px-8 xl:px-0">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex justify-between py-2">
+          <!-- Top Header Left Side -->
+          <div class="left-side flex items-center gap-3">
+            <a href="tel:+1 (123) 456-7890"><i class="fa-solid fa-phone"></i> +1 (123) 456-7890</a>
+            <span>|</span>
+            <a href="mailto:hello@medicare.com"><i class="fa-solid fa-envelope"></i> hello@medicare.com</a>
+          </div>
+          <!-- Top Header Right Side -->
+          <div class="right-side flex items-center gap-3">
+            <span>Follow Us:</span>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <span>|</span>
+            <i class="fa-solid fa-earth-asia"></i>
+            <span>EN <i class="fa-solid fa-angle-down"></i></span>
           </div>
         </div>
       </div>
-      <!-- Main Header -->
-      <div class="main-header max-w-5xl mx-auto">
-        <div class="flex justify-between items-center">
-          <!-- logo -->
-          <div class="logo">
-            <a href="#">
-              <img src="./src/assets/logo.png" alt="" />
-            </a>
-          </div>
-          <!-- Nav Menu -->
-          <nav class="menu">
-            <ul class="flex items-center gap-7 py-5">
-              <li>
-                <a class="active" href="#">Home <i class="fa-solid fa-angle-down"></i></a>
-              </li>
-              <li>
-                <a href="#">Shop <i class="fa-solid fa-angle-down"></i></a>
-              </li>
-              <li>
-                <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
-              </li>
-              <li>
-                <a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
-              </li>
+    </div>
+    <!-- Main Header -->
+    <div class="main-header max-w-5xl mx-auto py-3 ">
+      <div class="flex justify-between items-center px-8 xl:px-0 ">
+        <!-- logo -->
+        <div class="logo">
+          <a href="#">
+            <img src="./src/assets/logo.png" alt="logo" />
+          </a>
+        </div>
+        <!-- Nav Menu -->
+        <div class="flex justify-between items-center gap-8">
+          <nav class="hidden md:block">
+            <ul class="nav-links flex items-center md:gap-6 lg:gap-7 py-5">
+              <li> <a class="active " href="#">Home <i class="fa-solid fa-angle-down"></i></a></li>
+              <li><a href="#">Shop <i class="fa-solid fa-angle-down"></i></a></li>
+              <li><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a></li>
+              <li><a href="#">Blog <i class="fa-solid fa-angle-down"></i></a></li>
               <li><a href="#">Contact</a></li>
-              <!-- Appointment Button -->
-              <div class="appointment-btn">
-                <a
-                 href="#"
-                  class="inline-block bg-blue-600 px-4 py-2 text-white rounded-full cursor-pointer"
-                >
-                  Appointment <i class="fa-solid fa-angle-right"></i>
-                </a>
-              </div>
             </ul>
           </nav>
+          <!-- Appointment Button -->
+          <div class="appointment-btn hidden lg:block">
+            <a href="#"
+              class="inline-block bg-blue-600 px-5 py-2 text-white rounded-full cursor-pointer transition-all duration-200 hover:bg-gray-800">
+              Appointment <i class="fa-solid fa-angle-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+        <div class="menu-toggle block md:hidden cursor-pointer text-[24px]">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden absolute top-full left-0 w-full bg-linear-to-bl from-violet-500 to-fuchsia-500 text-white shadow-lg z-50">
+          <ul class="flex flex-col items-center gap-4 py-5 nav-links">
+            <li class="my-2"><a class="active" href="#">Home <i class="fa-solid fa-angle-down"></i></a></li>
+            <li class="my-2"><a href="#">Shop <i class="fa-solid fa-angle-down"></i></a></li>
+            <li class="my-2"><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a></li>
+            <li class="my-2"><a href="#">Blog <i class="fa-solid fa-angle-down"></i></a></li>
+            <li class="my-2 "><a href="#">Contact</a></li>
+          </ul>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero w-full bg-linear-to-r from-[#155DFC33] to-[#0B819D45] ">
-      <div
-        class="max-w-5xl mx-auto"
-      >
-       <div class="flex justify-between items-center">
-        <div class="left">
+  <!-- Hero Section -->
+  <section class="hero w-full bg-linear-to-r from-[#155DFC33] to-[#0B819D45]">
+    <div class="max-w-5xl mx-auto px-8 xl:px-0">
+      <div class="flex justify-between items-center flex-col md:flex-row">
+        <div class="left order-2 md:order-1 pt-12 sm:pt-10 md:pt-0 pb-14 sm:pb-16 md:pb-0">
           <span class="bg-[#0D9488] inline-block rounded-full px-3 text-white">Health comes first</span>
-          <h1 class="text-7xl font-semibold py-2 relative">Smart Health <img class="absolute left-[50%] w-28" src="./src/assets/shape_2.png" alt=""><span class="text-blue-600">Solutions</span></h1>
-          <p class="font-normal text-[#7A7A7A] py-5">
+          <h1 class="relative text-6xl  lg:text-7xl font-semibold py-2 ">Smart Health <img class="absolute left-[60%] sm:left-[40%] md:left-[50%] w-28"
+              src="./src/assets/shape_2.png" alt=""><span class="text-blue-600">Solutions</span></h1>
+          <p class="font-normal text-[#7A7A7A] py-5 w-full ">
             Book virtual consultations with top specialists in minutes. We put
             your health first. Book your appointment now
           </p>
-          <div class="flex items-center gap-3">
-            <a class="border-none  bg-blue-600 px-6 py-2 rounded-full text-white" href="#"><i class="fa-regular fa-user"></i> Find a Doctor</a>
-            <a class="border-none  bg-white px-6 py-2 rounded-full text-blue-600" href="#">
+          <div class="flex items-center gap-2 md:gap-3 flex-col sm:flex-row -mr-1 sm:mr-0">
+            <a class="border-none  bg-blue-600 px-6 py-2 rounded-full text-white transition-all duration-200 hover:bg-green-600 w-full sm:w-auto text-center"
+              href="#"><i class="fa-regular fa-user"></i> Find a Doctor</a>
+            <a class="border-none  bg-white px-6 py-2 rounded-full text-blue-600 transition-all duration-200 hover:bg-rose-500 hover:text-white w-full sm:w-auto text-center"
+              href="#">
               <i class="fa-solid fa-phone-flip"></i> Emergency Help
             </a>
           </div>
         </div>
-        <div class="right relative top-0 left-0 h-125 w-1/2 p-6">
-            <img class="absolute left-3"
-              src="./src/assets/Vector.png"
-              alt="hero right side picture shape"
-            />
-             <img
-              class="absolute top-0 right-0 h-full w-full"
-              src="./src/assets/erasebg-transformed 1.png"
-              alt="female doctor image"
-            />
-          </div>
-       </div> 
+        <div class="right relative top-0 left-0  p-6 order-1 md:order-2 my-4 md:my-0 w-full md:w-1/2 h-125  object-cover md:object-none">
+          <img class="absolute left-3 sm:pl-22 md:pl-0 md:pt-14 lg:pt-0" src="./src/assets/Vector.png" alt="hero right side picture shape" />
+          <img class="absolute top-0 right-0 h-full w-full " src="./src/assets/erasebg-transformed 1.png"
+            alt="female doctor image" />
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- About Us Section -->
-    <section class="about-us w-full bg-white pt-24 pb-8">
-      <!-- grid grid-cols-2 gap-12 py-26 -->
-      <div class="max-w-5xl mx-auto flex justify-between gap-12 mb-20">
-      <div class="left relative w-1/2">
-        <div class="grid grid-cols-12 gap-3 text-white">
-          <img class="col-span-8"
-            src="./src/assets/about-left.png"
-            alt="Diagnosis Doctor picture"
-          />
-          <div class="bg-[#0D9488] col-span-4 self-start rounded-2xl py-4 h-42 flex flex-col justify-center items-center">
+  <!-- About Us Section -->
+  <section class="about-us w-full bg-white pt-10 md:pt-14 lg:pt-24 md:pb-8">
+    <div class="max-w-5xl mx-auto flex flex-col lg:flex-row justify-between  gap-12 mb-10 lg:mb-20 px-8 xl:px-0">
+      <div class="left relative w-full lg:w-1/2 sm:mt-3 md:mt-0">
+        <div class="grid grid-cols-12 gap-4 text-white">
+          <img class="col-span-8 sm:w-full lg:w-auto" src="./src/assets/about-left.png" alt="Diagnosis Doctor picture" />
+          <div
+            class="bg-[#0D9488] col-span-4 self-start rounded-2xl py-4 h-36 sm:h-42 md:h-46 lg:h-42 flex flex-col justify-center items-center">
             <h2 class="font-bold text-4xl">85%</h2>
-            <p class="text-center">Successfully Diagnosis</p>
-          </div>  
-   
-          <div class="bg-[#0D9488] absolute bottom-[-2%] left-0  w-50 col-span-4 self-end p-3 rounded-xl flex justify-center gap-1 items-center">
-            <i class="fa-solid fa-circle-check text-4xl"></i>  
+            <p class="text-center ">Successfully Diagnosis</p>
+          </div>
+
+          <div
+            class="bg-[#0D9488] col-span-6 sm:col-span-5 absolute bottom-[-24%] sm:bottom-[-17%] md:bottom-[-13%] lg:bottom-[-2%] left-0  w-40 sm:w-57 md:w-70 lg:w-42 xl:w-50  self-end p-3 rounded-xl flex justify-center gap-1 lg:gap-2 items-center">
+            <i class="fa-solid fa-circle-check text-2xl sm:text-4xl"></i>
             <p> With 15+ years of experience</p>
           </div>
-          <img class="col-span-7 absolute bottom-[-2%] right-0 "
-            src="./src/assets/about-left2.png"
-            alt="Diagnosis Operation Picture"
-          />  
-           </div>
+          <img class="col-span-6 sm:col-span-7 absolute bottom-[-24%] sm:bottom-[-17%] md:bottom-[-13%] lg:bottom-[-2%] right-0 w-[60%] lg:w-auto" src="./src/assets/about-left2.png"
+            alt="Diagnosis Operation Picture" />
         </div>
-      <div class="relative right w-1/2">
+      </div>
+      <div class="relative right w-full lg:w-1/2 mt-18 sm:mt-20 mb-5 md:mb-0 lg:m-0">
         <p class="text-blue-600 font-bold ">Compassionate Care, Advanced Technology</p>
-        <h2 class="text-[48px] font-bold text-[#333333] leading-14">Trusted Healthcare for Your Family</h2>
+        <h2 class="text-[42px] md:text-[48px] font-bold text-[#333333] leading-12 md:leading-14">Trusted Healthcare for Your Family</h2>
         <p class="text-[#7A7A7A] py-6 text-[18px] leading-7">
           Since 2005, we’ve provided world-class medical services with a
           patient-first approach. Our board-certified doctors and cutting-edge
           facilities ensure the best outcomes.
         </p>
         <div class="grid grid-cols-2 gap-2 ">
-            <span><i class="fa-solid fa-check"></i> 24/7 Emergency Care</span>
-              <span><i class="fa-solid fa-check "></i> 50+ Specialist Doctors</span>
-                 <span
-              ><i class="fa-solid fa-check "></i> 98% Patient Satisfaction</span
-            >
-            <span><i class="fa-solid fa-check"></i> Free Consultations</span>
-            <span
-              ><i class="fa-solid fa-check"></i> JCI-Accredited Facility</span
-            >
-            <span><i class="fa-solid fa-check "></i> Advanced Technology</span>
-            <span><i class="fa-solid fa-check"></i> Multilingual Staff</span>
-            <span><i class="fa-solid fa-check"></i> Holistic Approach</span>
+          <span><i class="fa-solid fa-check"></i> 24/7 Emergency Care</span>
+          <span><i class="fa-solid fa-check "></i> 50+ Specialist Doctors</span>
+          <span><i class="fa-solid fa-check "></i> 98% Patient Satisfaction</span>
+          <span><i class="fa-solid fa-check"></i> Free Consultations</span>
+          <span><i class="fa-solid fa-check"></i> JCI-Accredited Facility</span>
+          <span><i class="fa-solid fa-check "></i> Advanced Technology</span>
+          <span><i class="fa-solid fa-check"></i> Multilingual Staff</span>
+          <span><i class="fa-solid fa-check"></i> Holistic Approach</span>
         </div>
         <div class="pt-6 mt-4">
-          <a href="#" class="border-none  bg-blue-600 px-10 py-3 rounded-full text-white">Meet Our Team <i class="fa-solid fa-angle-right"></i></a>
+          <a href="#"
+            class="border-none  bg-blue-600 px-6 py-3 rounded-full text-white transition-all duration-200 hover:bg-amber-500">Meet
+            Our Team <i class="fa-solid fa-angle-right ml-1"></i></a>
         </div>
-        <img class="absolute right-0 bottom-[-15%]" src="./src/assets/49214 1.png" alt="heart image">
+        <img class="absolute right-0 -bottom-12 md:bottom-[-15%]" src="./src/assets/49214 1.png" alt="heart image">
       </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Departments Section -->
-    <section class="departments relative w-full bg-linear-to-r from-[#155DFC33] to-[#0B819D45] py-24">
-      <div class="max-w-5xl mx-auto">
+  <!-- Departments Section -->
+  <section class="departments relative w-full bg-linear-to-r from-[#155DFC33] to-[#0B819D45] py-14 lg:py-24 px-8 xl:px-0">
+    <div class="max-w-5xl mx-auto">
       <p class="text-blue-600 font-bold">Our Medical Departments</p>
-      <h2 class="text-[#333333] text-[48px] font-bold pb-10 pt-2">Complete Wellness Solutions For Every Stage of Life</h2>
+      <h2 class="text-[#333333] text-[36px] md:text-[48px] font-bold pb-10 pt-2 ">Complete Wellness Solutions For Every Stage of Life
+      </h2>
       <div class="grid grid-cols-12 gap-4">
-        <div class="group card col-span-4">
-          <svg
-            width="104"
-            height="104"
-            viewBox="0 0 104 104"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class=""
-          >
+        <div class="card col-span-12 sm:col-span-6 lg:col-span-4">
+          <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
             <path class="circle"
               d="M0 52C0 23.2812 23.2812 0 52 0C80.7188 0 104 23.2812 104 52C104 80.7188 80.7188 104 52 104C23.2812 104 0 80.7188 0 52Z"
-              fill="#155DFC"
-            />
+              fill="#155DFC" />
             <path
               d="M38.24 32.6338C38.5312 31.1717 39.2377 29.8245 40.2749 28.7537C41.312 27.6829 42.6359 26.9337 44.088 26.5961C45.54 26.2584 47.0586 26.3465 48.4619 26.8497C49.8652 27.353 51.0936 28.2502 52 29.4338C52.9064 28.2502 54.1349 27.353 55.5381 26.8497C56.9414 26.3465 58.46 26.2584 59.912 26.5961C61.3641 26.9337 62.688 27.6829 63.7252 28.7537C64.7623 29.8245 65.4688 31.1717 65.76 32.6338L66.16 34.6402L67.4592 34.8994C69.4161 35.2919 71.1767 36.3497 72.4419 37.8933C73.7072 39.4368 74.3991 41.3707 74.4 43.3666V44.0002C74.4 46.3234 73.408 48.4162 71.824 49.8786C73.7588 50.8373 75.3469 52.3747 76.3678 54.2774C77.3887 56.1801 77.7917 58.3535 77.5207 60.4957C77.2498 62.6379 76.3184 64.6425 74.8559 66.2311C73.3935 67.8197 71.4725 68.9133 69.36 69.3602L69.2416 69.9522C68.8729 71.7969 67.9656 73.4909 66.6343 74.8201C65.3031 76.1492 63.6076 77.0539 61.7623 77.4197C59.917 77.7854 58.0046 77.5959 56.267 76.8751C54.5294 76.1542 53.0445 74.9344 52 73.3698C50.9555 74.9344 49.4706 76.1542 47.733 76.8751C45.9954 77.5959 44.083 77.7854 42.2377 77.4197C40.3924 77.0539 38.697 76.1492 37.3657 74.8201C36.0344 73.4909 35.1271 71.7969 34.7584 69.9522L34.64 69.3602C32.5275 68.9133 30.6066 67.8197 29.1441 66.2311C27.6816 64.6425 26.7502 62.6379 26.4793 60.4957C26.2083 58.3535 26.6113 56.1801 27.6322 54.2774C28.6531 52.3747 30.2412 50.8373 32.176 49.8786C31.3641 49.1296 30.716 48.2207 30.2727 47.209C29.8293 46.1973 29.6003 45.1047 29.6 44.0002V43.3666C29.6009 41.3707 30.2928 39.4368 31.5581 37.8933C32.8233 36.3497 34.584 35.2919 36.5408 34.8994L37.84 34.6434L38.24 32.6338ZM66.4 52.0002C65.9757 52.0002 65.5687 51.8316 65.2686 51.5315C64.9686 51.2315 64.8 50.8245 64.8 50.4002C64.8 49.9758 64.9686 49.5688 65.2686 49.2688C65.5687 48.9687 65.9757 48.8002 66.4 48.8002C67.673 48.8002 68.8939 48.2944 69.7941 47.3943C70.6943 46.4941 71.2 45.2732 71.2 44.0002V43.3666C71.2 40.7746 69.3728 38.5474 66.832 38.0386L64.4864 37.5682C64.1769 37.5061 63.8927 37.3539 63.6694 37.1307C63.4462 36.9075 63.294 36.6233 63.232 36.3138L62.6208 33.261C62.4014 32.1504 61.7761 31.1614 60.867 30.4868C59.9578 29.8122 58.83 29.5005 57.7035 29.6124C56.577 29.7243 55.5326 30.2518 54.7739 31.092C54.0152 31.9322 53.5967 33.0249 53.6 34.157V68.0866C53.6027 69.6514 54.1864 71.1596 55.2379 72.3185C56.2895 73.4774 57.734 74.2045 59.2913 74.3587C60.8485 74.513 62.4076 74.0834 63.6661 73.1533C64.9246 72.2232 65.7928 70.8589 66.1024 69.325L66.432 67.6866C66.494 67.377 66.6462 67.0928 66.8694 66.8696C67.0927 66.6464 67.3769 66.4942 67.6864 66.4322L68.6176 66.2434C70.3632 65.8888 71.9151 64.8992 72.973 63.4662C74.031 62.0332 74.5196 60.2586 74.3444 58.486C74.1692 56.7135 73.3425 55.0689 72.0245 53.8708C70.7065 52.6726 68.9908 52.0061 67.2096 52.0002H66.4ZM50.4 64.8002V34.1506C50.4025 33.0188 49.9834 31.9266 49.2245 31.087C48.4656 30.2474 47.4212 29.7205 46.2949 29.6091C45.1686 29.4976 44.0412 29.8096 43.1324 30.4841C42.2236 31.1586 41.5986 32.1475 41.3792 33.2578L40.7712 36.3106C40.709 36.6205 40.5563 36.905 40.3325 37.1283C40.1086 37.3516 39.8237 37.5035 39.5136 37.565L37.168 38.0354C35.9363 38.2829 34.8283 38.9492 34.032 39.921C33.2358 40.8928 32.8005 42.1102 32.8 43.3666V44.0002C32.8 45.2732 33.3057 46.4941 34.2059 47.3943C35.1061 48.2944 36.327 48.8002 37.6 48.8002C38.0244 48.8002 38.4313 48.9687 38.7314 49.2688C39.0314 49.5688 39.2 49.9758 39.2 50.4002C39.2 50.8245 39.0314 51.2315 38.7314 51.5315C38.4313 51.8316 38.0244 52.0002 37.6 52.0002H36.7936C35.0121 52.0053 33.2959 52.6713 31.9773 53.8692C30.6587 55.0671 29.8315 56.7117 29.6558 58.4845C29.4802 60.2573 29.9686 62.0322 31.0265 63.4655C32.0844 64.8989 33.6366 65.8887 35.3824 66.2434L36.3136 66.4322C36.6231 66.4942 36.9074 66.6464 37.1306 66.8696C37.3538 67.0928 37.506 67.377 37.568 67.6866L37.8976 69.325C38.2072 70.8589 39.0754 72.2232 40.3339 73.1533C41.5924 74.0834 43.1515 74.513 44.7088 74.3587C46.266 74.2045 47.7105 73.4774 48.7621 72.3185C49.8137 71.1596 50.3974 69.6514 50.4 68.0866V64.8002Z"
-              fill="white"
-            />
+              fill="white" />
           </svg>
           <h3>Neurology</h3>
           <p>
@@ -212,22 +192,14 @@
           </p>
           <a href="#" class="group-hover:text-red-500">Read More <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="card col-span-4">
-          <svg
-            width="104"
-            height="104"
-            viewBox="0 0 104 104"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+        <div class="card col-span-12 sm:col-span-6 lg:col-span-4">
+          <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="circle"
               d="M0 52C0 23.2812 23.2812 0 52 0C80.7188 0 104 23.2812 104 52C104 80.7188 80.7188 104 52 104C23.2812 104 0 80.7188 0 52Z"
-              fill="#155DFC"
-            />
+              fill="#155DFC" />
             <path
               d="M38.24 32.6338C38.5312 31.1717 39.2377 29.8245 40.2749 28.7537C41.312 27.6829 42.6359 26.9337 44.088 26.5961C45.54 26.2584 47.0586 26.3465 48.4619 26.8497C49.8652 27.353 51.0936 28.2502 52 29.4338C52.9064 28.2502 54.1349 27.353 55.5381 26.8497C56.9414 26.3465 58.46 26.2584 59.912 26.5961C61.3641 26.9337 62.688 27.6829 63.7252 28.7537C64.7623 29.8245 65.4688 31.1717 65.76 32.6338L66.16 34.6402L67.4592 34.8994C69.4161 35.2919 71.1767 36.3497 72.4419 37.8933C73.7072 39.4368 74.3991 41.3707 74.4 43.3666V44.0002C74.4 46.3234 73.408 48.4162 71.824 49.8786C73.7588 50.8373 75.3469 52.3747 76.3678 54.2774C77.3887 56.1801 77.7917 58.3535 77.5207 60.4957C77.2498 62.6379 76.3184 64.6425 74.8559 66.2311C73.3935 67.8197 71.4725 68.9133 69.36 69.3602L69.2416 69.9522C68.8729 71.7969 67.9656 73.4909 66.6343 74.8201C65.3031 76.1492 63.6076 77.0539 61.7623 77.4197C59.917 77.7854 58.0046 77.5959 56.267 76.8751C54.5294 76.1542 53.0445 74.9344 52 73.3698C50.9555 74.9344 49.4706 76.1542 47.733 76.8751C45.9954 77.5959 44.083 77.7854 42.2377 77.4197C40.3924 77.0539 38.697 76.1492 37.3657 74.8201C36.0344 73.4909 35.1271 71.7969 34.7584 69.9522L34.64 69.3602C32.5275 68.9133 30.6066 67.8197 29.1441 66.2311C27.6816 64.6425 26.7502 62.6379 26.4793 60.4957C26.2083 58.3535 26.6113 56.1801 27.6322 54.2774C28.6531 52.3747 30.2412 50.8373 32.176 49.8786C31.3641 49.1296 30.716 48.2207 30.2727 47.209C29.8293 46.1973 29.6003 45.1047 29.6 44.0002V43.3666C29.6009 41.3707 30.2928 39.4368 31.5581 37.8933C32.8233 36.3497 34.584 35.2919 36.5408 34.8994L37.84 34.6434L38.24 32.6338ZM66.4 52.0002C65.9757 52.0002 65.5687 51.8316 65.2686 51.5315C64.9686 51.2315 64.8 50.8245 64.8 50.4002C64.8 49.9758 64.9686 49.5688 65.2686 49.2688C65.5687 48.9687 65.9757 48.8002 66.4 48.8002C67.673 48.8002 68.8939 48.2944 69.7941 47.3943C70.6943 46.4941 71.2 45.2732 71.2 44.0002V43.3666C71.2 40.7746 69.3728 38.5474 66.832 38.0386L64.4864 37.5682C64.1769 37.5061 63.8927 37.3539 63.6694 37.1307C63.4462 36.9075 63.294 36.6233 63.232 36.3138L62.6208 33.261C62.4014 32.1504 61.7761 31.1614 60.867 30.4868C59.9578 29.8122 58.83 29.5005 57.7035 29.6124C56.577 29.7243 55.5326 30.2518 54.7739 31.092C54.0152 31.9322 53.5967 33.0249 53.6 34.157V68.0866C53.6027 69.6514 54.1864 71.1596 55.2379 72.3185C56.2895 73.4774 57.734 74.2045 59.2913 74.3587C60.8485 74.513 62.4076 74.0834 63.6661 73.1533C64.9246 72.2232 65.7928 70.8589 66.1024 69.325L66.432 67.6866C66.494 67.377 66.6462 67.0928 66.8694 66.8696C67.0927 66.6464 67.3769 66.4942 67.6864 66.4322L68.6176 66.2434C70.3632 65.8888 71.9151 64.8992 72.973 63.4662C74.031 62.0332 74.5196 60.2586 74.3444 58.486C74.1692 56.7135 73.3425 55.0689 72.0245 53.8708C70.7065 52.6726 68.9908 52.0061 67.2096 52.0002H66.4ZM50.4 64.8002V34.1506C50.4025 33.0188 49.9834 31.9266 49.2245 31.087C48.4656 30.2474 47.4212 29.7205 46.2949 29.6091C45.1686 29.4976 44.0412 29.8096 43.1324 30.4841C42.2236 31.1586 41.5986 32.1475 41.3792 33.2578L40.7712 36.3106C40.709 36.6205 40.5563 36.905 40.3325 37.1283C40.1086 37.3516 39.8237 37.5035 39.5136 37.565L37.168 38.0354C35.9363 38.2829 34.8283 38.9492 34.032 39.921C33.2358 40.8928 32.8005 42.1102 32.8 43.3666V44.0002C32.8 45.2732 33.3057 46.4941 34.2059 47.3943C35.1061 48.2944 36.327 48.8002 37.6 48.8002C38.0244 48.8002 38.4313 48.9687 38.7314 49.2688C39.0314 49.5688 39.2 49.9758 39.2 50.4002C39.2 50.8245 39.0314 51.2315 38.7314 51.5315C38.4313 51.8316 38.0244 52.0002 37.6 52.0002H36.7936C35.0121 52.0053 33.2959 52.6713 31.9773 53.8692C30.6587 55.0671 29.8315 56.7117 29.6558 58.4845C29.4802 60.2573 29.9686 62.0322 31.0265 63.4655C32.0844 64.8989 33.6366 65.8887 35.3824 66.2434L36.3136 66.4322C36.6231 66.4942 36.9074 66.6464 37.1306 66.8696C37.3538 67.0928 37.506 67.377 37.568 67.6866L37.8976 69.325C38.2072 70.8589 39.0754 72.2232 40.3339 73.1533C41.5924 74.0834 43.1515 74.513 44.7088 74.3587C46.266 74.2045 47.7105 73.4774 48.7621 72.3185C49.8137 71.1596 50.3974 69.6514 50.4 68.0866V64.8002Z"
-              fill="white"
-            />
+              fill="white" />
           </svg>
           <h3>Neurology</h3>
           <p>
@@ -236,22 +208,14 @@
           </p>
           <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="card col-span-4">
-          <svg
-            width="104"
-            height="104"
-            viewBox="0 0 104 104"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+        <div class="card col-span-12 sm:col-span-6 lg:col-span-4">
+          <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="circle"
               d="M0 52C0 23.2812 23.2812 0 52 0C80.7188 0 104 23.2812 104 52C104 80.7188 80.7188 104 52 104C23.2812 104 0 80.7188 0 52Z"
-              fill="#155DFC"
-            />
+              fill="#155DFC" />
             <path
               d="M55.904 76.0002C51.8258 76.0002 48.352 74.5762 45.4826 71.7282C42.6133 68.8802 41.1786 65.4153 41.1786 61.3335V59.9548C37.8009 59.6402 34.9564 58.2179 32.6453 55.6882C30.3342 53.1619 29.1786 50.1548 29.1786 46.6668V32.0002H37.1786V29.3335H39.8453V37.3335H37.1786V34.6668H31.8453V46.6668C31.8453 49.6002 32.8898 52.1113 34.9787 54.2002C37.0675 56.2891 39.5787 57.3335 42.512 57.3335C45.4453 57.3335 47.9564 56.2891 50.0453 54.2002C52.1342 52.1113 53.1786 49.6002 53.1786 46.6668V34.6668H47.8453V37.3335H45.1787V29.3335H47.8453V32.0002H55.8453V46.6668C55.8453 50.1548 54.6898 53.1628 52.3787 55.6908C50.0675 58.2188 47.2231 59.6402 43.8453 59.9548V61.3335C43.8453 64.6668 45.0169 67.5006 47.36 69.8348C49.7066 72.1673 52.5538 73.3335 55.9013 73.3335C59.2346 73.3335 62.0675 72.1673 64.4 69.8348C66.7324 67.5024 67.8995 64.6686 67.9013 61.3335V57.1735C66.6533 56.8802 65.6231 56.2242 64.8107 55.2055C63.9982 54.1868 63.592 53.0153 63.592 51.6908C63.592 50.1264 64.1413 48.7948 65.24 47.6962C66.3386 46.5993 67.672 46.0508 69.24 46.0508C70.808 46.0508 72.1395 46.5993 73.2346 47.6962C74.3298 48.7931 74.8764 50.1255 74.8746 51.6935C74.8746 53.0162 74.4684 54.1868 73.656 55.2055C72.8453 56.2242 71.816 56.8811 70.568 57.1762V61.3335C70.568 65.4153 69.144 68.8802 66.296 71.7282C63.448 74.5762 59.984 76.0002 55.904 76.0002Z"
-              fill="white"
-            />
+              fill="white" />
           </svg>
 
           <h3>Pediatrics</h3>
@@ -261,26 +225,17 @@
           </p>
           <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="card col-span-4">
-          <svg
-            width="104"
-            height="104"
-            viewBox="0 0 104 104"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+        <div class="card col-span-12 sm:col-span-6 lg:col-span-4">
+          <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="circle"
               d="M0 52C0 23.2812 23.2812 0 52 0C80.7188 0 104 23.2812 104 52C104 80.7188 80.7188 104 52 104C23.2812 104 0 80.7188 0 52Z"
-              fill="#155DFC"
-            />
+              fill="#155DFC" />
             <path
               d="M69.16 37.24H65.3467V34.84C65.3467 33.0719 64.6443 31.3762 63.394 30.126C62.1438 28.8757 60.4481 28.1733 58.68 28.1733H45.3467C43.5786 28.1733 41.8829 28.8757 40.6326 30.126C39.3824 31.3762 38.68 33.0719 38.68 34.84V37.24H34.84C33.0719 37.24 31.3762 37.9424 30.126 39.1926C28.8757 40.4429 28.1733 42.1386 28.1733 43.9067V69.16C28.1733 70.9281 28.8757 72.6238 30.126 73.8741C31.3762 75.1243 33.0719 75.8267 34.84 75.8267H69.16C70.0355 75.8267 70.9024 75.6542 71.7112 75.3192C72.5201 74.9842 73.255 74.4931 73.8741 73.8741C74.4931 73.255 74.9842 72.5201 75.3192 71.7112C75.6542 70.9024 75.8267 70.0355 75.8267 69.16V43.9067C75.8267 43.0312 75.6542 42.1643 75.3192 41.3555C74.9842 40.5466 74.4931 39.8117 73.8741 39.1926C73.255 38.5736 72.5201 38.0825 71.7112 37.7475C70.9024 37.4124 70.0355 37.24 69.16 37.24ZM41.3467 34.84C41.3467 33.7791 41.7681 32.7617 42.5182 32.0116C43.2684 31.2614 44.2858 30.84 45.3467 30.84H58.68C59.7409 30.84 60.7583 31.2614 61.5084 32.0116C62.2586 32.7617 62.68 33.7791 62.68 34.84V37.24H41.3467V34.84ZM73.16 69.16C73.16 70.2209 72.7386 71.2383 71.9884 71.9884C71.2383 72.7386 70.2209 73.16 69.16 73.16H34.84C33.7791 73.16 32.7617 72.7386 32.0116 71.9884C31.2614 71.2383 30.84 70.2209 30.84 69.16V43.9067C30.84 42.8458 31.2614 41.8284 32.0116 41.0782C32.7617 40.3281 33.7791 39.9067 34.84 39.9067H69.16C70.2209 39.9067 71.2383 40.3281 71.9884 41.0782C72.7386 41.8284 73.16 42.8458 73.16 43.9067V69.16Z"
-              fill="white"
-            />
+              fill="white" />
             <path
               d="M58.68 56.4665C58.68 56.8201 58.5395 57.1592 58.2895 57.4093C58.0394 57.6593 57.7003 57.7998 57.3467 57.7998H53.3467V61.7998C53.3467 62.1534 53.2062 62.4926 52.9561 62.7426C52.7061 62.9927 52.367 63.1331 52.0133 63.1331C51.6597 63.1331 51.3206 62.9927 51.0705 62.7426C50.8205 62.4926 50.68 62.1534 50.68 61.7998V57.7998H46.68C46.3264 57.7998 45.9872 57.6593 45.7372 57.4093C45.4871 57.1592 45.3467 56.8201 45.3467 56.4665C45.3467 56.1128 45.4871 55.7737 45.7372 55.5237C45.9872 55.2736 46.3264 55.1331 46.68 55.1331H50.68V51.1331C50.68 50.7795 50.8205 50.4404 51.0705 50.1903C51.3206 49.9403 51.6597 49.7998 52.0133 49.7998C52.3648 49.8066 52.7 49.9493 52.9486 50.1979C53.1972 50.4465 53.3398 50.7817 53.3467 51.1331V55.1331H57.3467C57.6981 55.14 58.0333 55.2826 58.2819 55.5312C58.5305 55.7798 58.6732 56.115 58.68 56.4665Z"
-              fill="white"
-            />
+              fill="white" />
           </svg>
 
           <h3>Dermatology</h3>
@@ -290,30 +245,17 @@
           </p>
           <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="card col-span-4">
-          <svg
-            width="104"
-            height="104"
-            viewBox="0 0 104 104"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+        <div class="card col-span-12 sm:col-span-6 lg:col-span-4">
+          <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="circle"
               d="M0 52C0 23.2812 23.2812 0 52 0C80.7188 0 104 23.2812 104 52C104 80.7188 80.7188 104 52 104C23.2812 104 0 80.7188 0 52Z"
-              fill="#155DFC"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fill="#155DFC" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
               d="M42.1986 32.4347L42.272 32.1147C42.412 31.5201 42.6413 30.6454 43.1146 29.7841C43.5973 28.9067 44.3453 28.0174 45.5186 27.4321C46.688 26.8494 48.1533 26.6321 49.9653 26.8721C51.9653 27.1387 55.9826 27.8001 59.532 29.6054C63.1013 31.4214 66.4453 34.5454 66.4453 39.7481C66.4453 42.4361 65.4053 45.3201 64.3973 47.2001C63.9133 48.1041 63.3386 48.9681 62.7626 49.4334C62.6306 49.5401 62.4426 49.6734 62.2093 49.7667C61.5693 51.8702 60.2952 53.7245 58.5613 55.0764C56.8273 56.4282 54.7182 57.2116 52.5222 57.3192C50.3262 57.4269 48.1505 56.8537 46.2927 55.678C44.4348 54.5023 42.9854 52.7814 42.1426 50.7507L42.1106 50.7561L41.6373 50.1814L41.636 50.1787L41.6333 50.1761L41.6266 50.1667L41.604 50.1401C41.49 49.998 41.3801 49.8526 41.2746 49.7041C40.9874 49.3043 40.7161 48.8933 40.4613 48.4721C39.8346 47.4347 39.0786 45.9574 38.5946 44.2334C38.112 42.5094 37.8906 40.4881 38.3973 38.4027C38.8906 36.3734 40.0546 34.3761 42.1626 32.5921L42.1986 32.4347ZM44.4386 49.2854C45.0169 50.9484 46.1274 52.3743 47.5981 53.3423C49.0688 54.3103 50.8176 54.7664 52.5737 54.6399C54.3298 54.5134 55.9952 53.8114 57.312 52.6426C58.6287 51.4738 59.5234 49.9034 59.8573 48.1747L60.008 48.2254C60.0021 48.15 59.9994 48.0744 60 47.9987C60 45.7921 59.6933 44.2521 59.408 43.2921C59.352 43.1053 59.2902 42.9203 59.2226 42.7374L59.168 42.7401H59.1146C58.1176 42.7615 57.1209 42.6856 56.1386 42.5134C53.8493 42.1267 50.7493 41.1614 47.0986 38.9254C47.0186 39.1041 46.9386 39.3054 46.8586 39.5294C46.5973 40.2694 46.3826 41.1481 46.1973 42.0761C46.0333 42.8934 45.8986 43.7161 45.7706 44.4867L45.7213 44.7907C45.584 45.6174 45.4466 46.4294 45.2866 47.0174C45.0066 48.0387 44.7213 48.7641 44.4386 49.2841M42.572 46.8001C41.9704 45.766 41.4975 44.6623 41.164 43.5134C40.7653 42.0921 40.6186 40.5534 40.9893 39.0321C41.3493 37.5521 42.22 35.9961 44.0106 34.5214C44.3333 34.3027 44.48 34.0094 44.52 33.9307V33.9294C44.5894 33.785 44.6456 33.6346 44.688 33.4801C44.7306 33.3281 44.7773 33.1201 44.8213 32.9334L44.868 32.7241C44.9946 32.1867 45.1586 31.6014 45.452 31.0667C45.7373 30.5494 46.128 30.1067 46.7093 29.8174C47.2933 29.5254 48.1973 29.3254 49.6133 29.5147C51.5506 29.7721 55.1946 30.3894 58.3226 31.9814C61.4293 33.5614 63.7786 35.9534 63.7786 39.7467C63.7786 41.4934 63.192 43.4801 62.4853 45.0467C62.352 44.0254 62.16 43.1907 61.9626 42.5294C61.8236 42.0572 61.6521 41.5952 61.4493 41.1467C61.3716 40.9811 61.2871 40.8187 61.196 40.6601L61.1733 40.6241L61.1653 40.6107L61.1613 40.6041L61.1586 40.6001L60.6653 39.8347L59.7826 40.0121L59.764 40.0161L59.6346 40.0334C59.4362 40.0557 59.2369 40.069 59.0373 40.0734C58.2152 40.0892 57.3936 40.0249 56.584 39.8814C54.4333 39.5187 51.2733 38.5307 47.4346 35.9747L46.5013 35.3521L45.7293 36.1654C45.0933 36.8347 44.6613 37.7481 44.3453 38.6374C44.0226 39.5507 43.7786 40.5707 43.5826 41.5494C43.4201 42.3822 43.2725 43.2179 43.14 44.0561L43.0893 44.3547C42.9466 45.2227 42.8306 45.8854 42.7133 46.3147C42.6653 46.4916 42.6182 46.6534 42.572 46.8001Z"
-              fill="white"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
               d="M43.8853 58.4736C43.6027 57.9109 43.2547 57.2163 42.6667 57.3509C35.4613 58.9909 28 63.7256 28 68.7603V76.0003H76V68.7603C76 64.7949 71.3707 61.0149 65.884 58.7869L65.8773 58.7736L65.8587 58.7376L65.8147 58.7589C64.3573 58.1723 62.84 57.6923 61.3333 57.3509C60.6627 57.1976 59.9693 58.1203 59.6667 58.6976H44L43.8853 58.4736ZM61.8707 60.2336C62.4538 60.3954 63.032 60.5763 63.6053 60.7763C63.6213 61.2323 63.5867 61.7709 63.512 62.3203C63.4365 62.8891 63.3152 63.4509 63.1493 64.0003H61.3333C61.0858 64.0004 60.8432 64.0694 60.6326 64.1997C60.4221 64.3299 60.252 64.5162 60.1413 64.7376L58.808 67.4043C58.7153 67.5893 58.6669 67.7933 58.6667 68.0003V70.6669C58.6667 71.0206 58.8071 71.3597 59.0572 71.6097C59.3072 71.8598 59.6464 72.0003 60 72.0003H62.6667V69.3336H61.3333V68.3149L62.1573 66.6669H65.8427L66.6667 68.3149V69.3336H65.3333V72.0003H68C68.3536 72.0003 68.6928 71.8598 68.9428 71.6097C69.1929 71.3597 69.3333 71.0206 69.3333 70.6669V68.0003C69.3331 67.7933 69.2847 67.5893 69.192 67.4043L67.8587 64.7376C67.748 64.5162 67.5779 64.3299 67.3674 64.1997C67.1568 64.0694 66.9142 64.0004 66.6667 64.0003H65.912C66.0751 63.2943 66.1856 62.5772 66.2427 61.8549C67.5427 62.4696 68.7507 63.1749 69.7973 63.9376C72.36 65.8069 73.3333 67.5563 73.3333 68.7603V73.3336H30.6667V68.7603C30.6667 67.5563 31.64 65.8069 34.2027 63.9376C35.4907 62.9976 37.028 62.1469 38.676 61.4429C38.722 62.5054 38.8925 63.5588 39.184 64.5816L39.1947 64.6189C38.3976 65.1232 37.8043 65.893 37.5196 66.7922C37.235 67.6915 37.2773 68.6624 37.6391 69.5335C38.0009 70.4046 38.6589 71.1198 39.4968 71.5528C40.3348 71.9859 41.2988 72.1089 42.2186 71.9001C43.1385 71.6913 43.9549 71.1641 44.5238 70.4118C45.0927 69.6594 45.3774 68.7302 45.3276 67.7883C45.2778 66.8463 44.8968 65.9523 44.2518 65.2641C43.6068 64.5758 42.7394 64.1376 41.8027 64.0269L41.744 63.8349C41.603 63.3383 41.4983 62.8321 41.4307 62.3203C41.3559 61.8034 41.3247 61.2811 41.3373 60.7589C41.3418 60.6469 41.3484 60.5474 41.3573 60.4603C41.5173 60.4105 41.6773 60.3629 41.8373 60.3176L42.3907 61.3656H61.276L61.8707 60.2336ZM41.3333 69.3549C42.0507 69.3549 42.6667 68.7683 42.6667 68.0016C42.6667 67.2363 42.0507 66.6483 41.3333 66.6483C40.616 66.6483 40 67.2349 40 68.0016C40 68.7669 40.616 69.3549 41.3333 69.3549Z"
-              fill="white"
-            />
+              fill="white" />
           </svg>
 
           <h3>Maternity</h3>
@@ -323,29 +265,18 @@
           </p>
           <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="card col-span-4">
-          <svg
-            class="hover-icon"
-            width="104"
-            height="104"
-            viewBox="0 0 104 104"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+        <div class="card col-span-12 sm:col-span-6 lg:col-span-4">
+          <svg class="hover-icon" width="104" height="104" viewBox="0 0 104 104" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path class="circle"
               d="M0 52C0 23.2812 23.2812 0 52 0C80.7188 0 104 23.2812 104 52C104 80.7188 80.7188 104 52 104C23.2812 104 0 80.7188 0 52Z"
-              fill="#155DFC" 
-            />
+              fill="#155DFC" />
             <path
               d="M51.5946 52.4055L52.1226 52.5895C60.816 55.5815 71.28 52.7202 78.6666 45.3335M51.5946 52.4055L50.1066 51.8962C41.9946 49.1015 32.2266 51.7735 25.3333 58.6668M51.5946 52.4055L51.4106 51.8775C48.4186 43.1842 51.28 32.7202 58.6666 25.3335M51.5946 52.4055L52.104 53.8935C54.8986 62.0028 52.2266 71.7735 45.3333 78.6668M46.6666 60.0002L51.5813 65.1255ZM38.04 51.5815L41.3333 54.8802ZM51.584 38.0402L57.3333 44.0002ZM62.6666 49.3335L65.1253 51.5815ZM30.6666 54.6668L40 64.0002ZM72.7413 49.0402L63.408 39.7068ZM44.8133 68.5095L49.0453 72.7415ZM58.8986 34.8988L54.6666 30.6668Z"
-              fill="white"
-            />
+              fill="white" />
             <path
               d="M51.5946 52.4055L52.1226 52.5895C60.816 55.5815 71.28 52.7202 78.6666 45.3335M51.5946 52.4055L50.1066 51.8962C41.9946 49.1015 32.2266 51.7735 25.3333 58.6668M51.5946 52.4055L51.4106 51.8775C48.4186 43.1842 51.28 32.7202 58.6666 25.3335M51.5946 52.4055L52.104 53.8935C54.8986 62.0028 52.2266 71.7735 45.3333 78.6668M46.6666 60.0002L51.5813 65.1255M38.04 51.5815L41.3333 54.8802M51.584 38.0402L57.3333 44.0002M62.6666 49.3335L65.1253 51.5815M30.6666 54.6668L40 64.0002M72.7413 49.0402L63.408 39.7068M44.8133 68.5095L49.0453 72.7415M58.8986 34.8988L54.6666 30.6668"
-              stroke="white"
-              stroke-width="1.5"
-              stroke-linecap="round"
-            />
+              stroke="white" fill="white" stroke-width="1.5" stroke-linecap="round" />
           </svg>
           <h3>Oncology</h3>
           <p>
@@ -355,8 +286,34 @@
           <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
-      </div>
-      <img class="absolute right-0 bottom-0" src="./src/assets/Group 1410098235.png" alt="medicine background">
-    </section>
-  </body>
+    </div>
+    <img class="absolute right-0 bottom-0" src="./src/assets/Group 1410098235.png" alt="medicine background">
+  </section>
+
+  <!-- toggle button with Javascript -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const menuToggle = document.querySelector('.menu-toggle');
+  
+  menuToggle.addEventListener('click', function() {
+
+    mobileMenu.classList.toggle('hidden');
+    
+    const icon = menuToggle.querySelector('i');
+    if (mobileMenu.classList.contains('hidden')) {
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars');
+    } else {
+      icon.classList.remove('fa-bars');
+      icon.classList.add('fa-times');
+    }
+  });
+});
+
+  </script>
+
+</body>
+
 </html>

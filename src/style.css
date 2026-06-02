@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+   --breakpoint-xs: 475px;
+}
+
+
 /* Header Section */
 .header .menu ul li a {
   color: #333333;
